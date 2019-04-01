@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimelERP", "SimelERP\SimelERP.csproj", "{28874811-5E69-4D93-93C4-F844F96A82C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9A17E7B1-F34F-4C9F-819D-87BEA0844508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimerERP.Domain", "SimerERP.Domain\SimerERP.Domain.csproj", "{4694397D-B0E4-40D5-B10F-89E7F7ED5590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimelERP.Application", "SimelERP.Application\SimelERP.Application.csproj", "{DEEBA1B7-532C-438F-9DF2-29B5BA7A8482}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scr", "Scr", "{BB8292C9-C820-471E-B8AD-4DF982840CDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A34E2A73-838D-4071-8E43-B7646EE2D17E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimelERP.Infrastructure", "SimelERP.Infrastructure\SimelERP.Infrastructure.csproj", "{CA87ED36-7D4A-4A44-963B-3FE43D7ABE7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimelERP.Persistence", "SimelERP.Persistence\SimelERP.Persistence.csproj", "{7B439194-BCBB-487A-A97C-5205BEAB4547}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28874811-5E69-4D93-93C4-F844F96A82C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28874811-5E69-4D93-93C4-F844F96A82C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28874811-5E69-4D93-93C4-F844F96A82C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28874811-5E69-4D93-93C4-F844F96A82C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4694397D-B0E4-40D5-B10F-89E7F7ED5590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4694397D-B0E4-40D5-B10F-89E7F7ED5590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4694397D-B0E4-40D5-B10F-89E7F7ED5590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4694397D-B0E4-40D5-B10F-89E7F7ED5590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEBA1B7-532C-438F-9DF2-29B5BA7A8482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEBA1B7-532C-438F-9DF2-29B5BA7A8482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEBA1B7-532C-438F-9DF2-29B5BA7A8482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEBA1B7-532C-438F-9DF2-29B5BA7A8482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA87ED36-7D4A-4A44-963B-3FE43D7ABE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA87ED36-7D4A-4A44-963B-3FE43D7ABE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA87ED36-7D4A-4A44-963B-3FE43D7ABE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA87ED36-7D4A-4A44-963B-3FE43D7ABE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B439194-BCBB-487A-A97C-5205BEAB4547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B439194-BCBB-487A-A97C-5205BEAB4547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B439194-BCBB-487A-A97C-5205BEAB4547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B439194-BCBB-487A-A97C-5205BEAB4547}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A17E7B1-F34F-4C9F-819D-87BEA0844508} = {BB8292C9-C820-471E-B8AD-4DF982840CDF}
+		{4694397D-B0E4-40D5-B10F-89E7F7ED5590} = {9A17E7B1-F34F-4C9F-819D-87BEA0844508}
+		{DEEBA1B7-532C-438F-9DF2-29B5BA7A8482} = {9A17E7B1-F34F-4C9F-819D-87BEA0844508}
+		{A34E2A73-838D-4071-8E43-B7646EE2D17E} = {BB8292C9-C820-471E-B8AD-4DF982840CDF}
+		{CA87ED36-7D4A-4A44-963B-3FE43D7ABE7B} = {A34E2A73-838D-4071-8E43-B7646EE2D17E}
+		{7B439194-BCBB-487A-A97C-5205BEAB4547} = {A34E2A73-838D-4071-8E43-B7646EE2D17E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {532DDEF4-E16E-407D-87EF-D7325DCC9395}
+	EndGlobalSection
+EndGlobal
