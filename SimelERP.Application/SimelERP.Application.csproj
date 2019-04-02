@@ -15,4 +15,8 @@
     <ProjectReference Include="..\SimelERP.Persistence\SimelERP.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Test\Query\Validators\" />
+  </ItemGroup>
+
 </Project>

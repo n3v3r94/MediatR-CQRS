@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SimelERP.Persistence.Migrations
 {
-    public partial class test : Migration
+    public partial class ReintiDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -51,14 +51,14 @@ namespace SimelERP.Persistence.Migrations
                 name: "TestERPs",
                 columns: table => new
                 {
-                    TestId = table.Column<int>(nullable: false)
+                    TestERPId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(maxLength: 20, nullable: false),
                     Text = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TestERPs", x => x.TestId);
+                    table.PrimaryKey("PK_TestERPs", x => x.TestERPId);
                 });
 
             migrationBuilder.CreateTable(

@@ -10,8 +10,8 @@ using SimelERP.Persistence;
 namespace SimelERP.Persistence.Migrations
 {
     [DbContext(typeof(SimelERPDbContext))]
-    [Migration("20190401212441_test")]
-    partial class test
+    [Migration("20190402065232_ReintiDb")]
+    partial class ReintiDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -186,7 +186,7 @@ namespace SimelERP.Persistence.Migrations
                 {
                     b.Property<int>("TestERPId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("TestId")
+                        .HasColumnName("TestERPId")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")

@@ -24,7 +24,7 @@ namespace SimelERP.Application.Infrastructure.AutoMapper
 
             // TODO: Add User Details
 
-            _logger.LogInformation("Northwind Request: {Name} {@Request}", name, request);
+            _logger.LogInformation("SimelERP Request: {Name} {@Request}", name, request);
 
             return Task.CompletedTask;
         }

@@ -1,4 +1,5 @@
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using MediatR;
 using MediatR.Pipeline;
 using Microsoft.AspNetCore.Builder;
@@ -11,7 +12,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SimelERP.Application.Infrastructure;
 using SimelERP.Application.Infrastructure.AutoMapper;
+using SimelERP.Application.Test.Query.Commands;
 using SimelERP.Application.Test.Query.GetTest;
+using SimelERP.Filters;
 using SimelERP.Persistence;
 using System.Reflection;
 
@@ -46,6 +49,11 @@ namespace SimelERP
             services.AddMediatR(typeof(GetTestQueryHandler).GetTypeInfo().Assembly);
 
 
+            services
+              .AddMvc(options => options.Filters.Add(typeof(CustomExceptionFilterAttribute)))
+              .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+              .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<UpdateTestCommandValidator>());
+
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -59,6 +67,7 @@ namespace SimelERP
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+              
             }
             else
             {

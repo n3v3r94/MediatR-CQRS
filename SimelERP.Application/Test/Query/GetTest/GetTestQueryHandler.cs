@@ -35,8 +35,7 @@ namespace SimelERP.Application.Test.Query.GetTest
             }
 
             // TODO: Set view model state based on user permissions.
-            test.EditEnabled = true;
-            test.DeleteEnabled = false;
+           
 
             return test;
 
